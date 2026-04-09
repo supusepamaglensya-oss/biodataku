@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Biodata Maglensya Yulya Supusepa - Mahasiswa Universitas Pattimura" />
+  <title>Biodata - Maglensya Yulya Supusepa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['DM Sans', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          },
+          colors: {
+            cream:   '#fdf6ec',
+            warmwhite: '#fffdf9',
+            gold:    '#c9973a',
+            'gold-light': '#e8c07a',
+            dark:    '#1a1208',
+            ink:     '#3a2e1a',
+            muted:   '#7a6a50',
+            border:  '#e8d9c0',
+            accent:  '#8b4513',
+            forest:  '#4a7c59',
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Tailwind doesn't cover every micro-detail; small extras live here */
+    .timeline { position: relative; padding-left: 28px; }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 8px; top: 4px; bottom: 4px;
+      width: 2px;
+      background: linear-gradient(to bottom, #c9973a, #e8d9c0);
+    }
+    .timeline-item { position: relative; margin-bottom: 24px; }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -24px; top: 6px;
+      width: 12px; height: 12px;
+      border-radius: 50%;
+      background: #c9973a;
+      border: 2px solid #fffdf9;
+      box-shadow: 0 0 0 3px #e8c07a;
+    }
+    .timeline-item:last-child { margin-bottom: 0; }
+    nav ul { scrollbar-width: none; }
+    nav ul::-webkit-scrollbar { display: none; }
+    details summary::-webkit-details-marker { display: none; }
+    details summary::before { content: '▸ '; transition: .2s; }
+    details[open] summary::before { content: '▾ '; }
+    .skill-tag:hover { transform: translateY(-2px); }
+    @media print { nav, .no-print { display: none; } }
+  </style>
+</head>
+<body class="bg-cream text-ink font-sans leading-relaxed">
+
+<!-- ═══ HEADER ═══ -->
+<header class="bg-dark text-cream px-8 py-14 relative overflow-hidden">
+  <!-- Decorative circles -->
+  <div class="absolute -top-16 -right-16 w-72 h-72 rounded-full"
+       style="background: radial-gradient(circle, rgba(201,151,58,.25), transparent 70%)"></div>
+  <div class="absolute -bottom-20 left-1/3 w-52 h-52 rounded-full"
+       style="background: radial-gradient(circle, rgba(201,151,58,.15), transparent 70%)"></div>
+
+  <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center gap-10 relative z-10">
+    <!-- Avatar -->
+    <div class="w-32 h-32 rounded-full border-4 border-gold flex items-center justify-center
+                font-serif text-5xl font-black text-dark flex-shrink-0"
+         style="background: linear-gradient(135deg, #e8c07a, #c9973a); box-shadow: 0 0 0 8px rgba(201,151,58,.15);"
+         aria-label="Inisial nama">MY</div>
+
+    <!-- Text -->
+    <div class="text-center sm:text-left">
+      <h1 class="font-serif text-4xl font-black text-warmwhite leading-tight tracking-tight">
+        Maglensya Yulya Supusepa
+      </h1>
+      <p class="text-gold-light text-sm font-medium mt-1.5 tracking-widest uppercase">
+        Mahasiswa Ilmu Komputer &nbsp;·&nbsp; Universitas Pattimura
+      </p>
+      <p class="text-cream/60 text-sm mt-2">
+        Desainer &bull; Fotografer &bull; Programmer &bull; Seniman
+      </p>
+      <div class="mt-4 flex flex-wrap justify-center sm:justify-start gap-5">
+        <a href="mailto:maglensya@email.com"
+           class="text-gold-light text-sm flex items-center gap-1.5 hover:text-white transition-colors">
+          ✉ maglensya@email.com
+        </a>
+        <a href="tel:+6281247064825"
+           class="text-gold-light text-sm flex items-center gap-1.5 hover:text-white transition-colors">
+          ☎ 081247064825
+        </a>
+        <span class="text-gold-light text-sm flex items-center gap-1.5">
+          📍 Passo, Baguala, Ambon
+        </span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ═══ NAV ═══ -->
+<nav class="bg-warmwhite border-b-2 border-border sticky top-0 z-50">
+  <ul class="max-w-4xl mx-auto flex overflow-x-auto list-none">
+    <li><a href="#tujuan"     class="block px-5 py-4 text-xs font-semibold text-muted uppercase tracking-wide border-b-2 border-transparent hover:text-gold hover:border-gold transition-all whitespace-nowrap">Tujuan</a></li>
+    <li><a href="#pribadi"    class="block px-5 py-4 text-xs font-semibold text-muted uppercase tracking-wide border-b-2 border-transparent hover:text-gold hover:border-gold transition-all whitespace-nowrap">Data Pribadi</a></li>
+    <li><a href="#pendidikan" class="block px-5 py-4 text-xs font-semibold text-muted uppercase tracking-wide border-b-2 border-transparent hover:text-gold hover:border-gold transition-all whitespace-nowrap">Pendidikan</a></li>
+    <li><a href="#organisasi" class="block px-5 py-4 text-xs font-semibold text-muted uppercase tracking-wide border-b-2 border-transparent hover:text-gold hover:border-gold transition-all whitespace-nowrap">Organisasi</a></li>
+    <li><a href="#keahlian"   class="block px-5 py-4 text-xs font-semibold text-muted uppercase tracking-wide border-b-2 border-transparent hover:text-gold hover:border-gold transition-all whitespace-nowrap">Keahlian</a></li>
+    <li><a href="#kontak"     class="block px-5 py-4 text-xs font-semibold text-muted uppercase tracking-wide border-b-2 border-transparent hover:text-gold hover:border-gold transition-all whitespace-nowrap">Kontak</a></li>
+  </ul>
+</nav>
+
+<!-- ═══ MAIN ═══ -->
+<main class="max-w-4xl mx-auto px-6 py-12 grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-8">
+
+  <!-- ── KOLOM KIRI ── -->
+  <div>
+
+    <!-- TUJUAN -->
+    <section id="tujuan" class="bg-warmwhite border border-border rounded-2xl p-8 mb-7">
+      <h2 class="font-serif text-xl font-bold text-dark mb-5 pb-3 border-b-2 border-gold flex items-center gap-2.5">
+        <span class="w-8 h-8 bg-gold rounded-lg flex items-center justify-center text-base">🎯</span>
+        Pernyataan Tujuan
+      </h2>
+      <blockquote class="border-l-4 border-gold pl-5 py-4 pr-4 italic text-ink text-[0.95rem] leading-loose rounded-r-xl"
+                  style="background: rgba(201,151,58,.06);">
+        Saya adalah mahasiswa aktif Program Studi Ilmu Komputer di Universitas Pattimura Ambon
+        dengan minat kuat di bidang teknologi, desain kreatif, dan seni. Saya memiliki semangat
+        belajar yang tinggi, terbiasa bekerja dalam tim melalui kegiatan organisasi, dan berkomitmen
+        untuk terus mengembangkan diri demi berkontribusi nyata bagi masyarakat Maluku dan Indonesia.
+        <cite class="block mt-3 not-italic text-xs font-semibold text-muted">
+          — Maglensya Yulya Supusepa
+        </cite>
+      </blockquote>
+
+      <details class="mt-3 bg-cream border border-border rounded-xl">
+        <summary class="px-4 py-3 cursor-pointer font-semibold text-sm text-accent list-none">
+          Mengapa saya layak mendapat kesempatan ini?
+        </summary>
+        <p class="px-4 pb-4 text-sm text-muted">
+          Saya memiliki kombinasi keahlian teknis (Python, desain) dan keahlian seni (fotografi, ukulele, tari)
+          yang membuat saya mampu berpikir kreatif sekaligus analitis. Pengalaman di OSIS dan Himpunan Mahasiswa
+          melatih saya dalam kepemimpinan dan kerja kolaboratif.
+        </p>
+      </details>
+    </section>
+
+    <!-- DATA PRIBADI -->
+    <section id="pribadi" class="bg-warmwhite border border-border rounded-2xl p-8 mb-7">
+      <h2 class="font-serif text-xl font-bold text-dark mb-5 pb-3 border-b-2 border-gold flex items-center gap-2.5">
+        <span class="w-8 h-8 bg-gold rounded-lg flex items-center justify-center text-base">👤</span>
+        Data Pribadi
+      </h2>
+      <table class="w-full border-collapse text-sm">
+        <caption class="italic text-muted text-xs mb-3 text-left">Informasi identitas diri</caption>
+        <thead>
+          <tr>
+            <th class="bg-dark text-gold-light font-semibold tracking-wide uppercase text-xs px-4 py-2.5 text-left first:rounded-tl-lg last:rounded-tr-lg">Keterangan</th>
+            <th class="bg-dark text-gold-light font-semibold tracking-wide uppercase text-xs px-4 py-2.5 text-left rounded-tr-lg">Detail</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="even:bg-cream hover:bg-[#f0e8d8] transition-colors">
+            <td class="px-4 py-2.5 text-muted font-medium text-xs">Nama Lengkap</td>
+            <td class="px-4 py-2.5 text-ink">Maglensya Yulya Supusepa</td>
+          </tr>
+          <tr class="even:bg-cream hover:bg-[#f0e8d8] transition-colors">
+            <td class="px-4 py-2.5 text-muted font-medium text-xs">Tempat Lahir</td>
+            <td class="px-4 py-2.5 text-ink">Ambon</td>
+          </tr>
+          <tr class="even:bg-cream hover:bg-[#f0e8d8] transition-colors">
+            <td class="px-4 py-2.5 text-muted font-medium text-xs">Tanggal Lahir</td>
+            <td class="px-4 py-2.5 text-ink">18 Februari 2007</td>
+          </tr>
+          <tr class="even:bg-cream hover:bg-[#f0e8d8] transition-colors">
+            <td class="px-4 py-2.5 text-muted font-medium text-xs">Umur</td>
+            <td class="px-4 py-2.5 text-ink">18 Tahun</td>
+          </tr>
+          <tr class="even:bg-cream hover:bg-[#f0e8d8] transition-colors">
+            <td class="px-4 py-2.5 text-muted font-medium text-xs">Jenis Kelamin</td>
+            <td class="px-4 py-2.5 text-ink">Perempuan</td>
+          </tr>
+          <tr class="even:bg-cream hover:bg-[#f0e8d8] transition-colors">
+            <td class="px-4 py-2.5 text-muted font-medium text-xs">Kewarganegaraan</td>
+            <td class="px-4 py-2.5 text-ink">Indonesia</td>
+          </tr>
+          <tr class="even:bg-cream hover:bg-[#f0e8d8] transition-colors">
+            <td class="px-4 py-2.5 text-muted font-medium text-xs">Agama</td>
+            <td class="px-4 py-2.5 text-ink">Kristen Protestan</td>
+          </tr>
+          <tr class="even:bg-cream hover:bg-[#f0e8d8] transition-colors">
+            <td class="px-4 py-2.5 text-muted font-medium text-xs">Provinsi</td>
+            <td class="px-4 py-2.5 text-ink">Maluku</td>
+          </tr>
+          <tr class="even:bg-cream hover:bg-[#f0e8d8] transition-colors">
+            <td class="px-4 py-2.5 text-muted font-medium text-xs">Kota</td>
+            <td class="px-4 py-2.5 text-ink">Ambon</td>
+          </tr>
+          <tr class="even:bg-cream hover:bg-[#f0e8d8] transition-colors">
+            <td class="px-4 py-2.5 text-muted font-medium text-xs">Kecamatan</td>
+            <td class="px-4 py-2.5 text-ink">Baguala</td>
+          </tr>
+          <tr class="even:bg-cream hover:bg-[#f0e8d8] transition-colors">
+            <td class="px-4 py-2.5 text-muted font-medium text-xs">Kelurahan</td>
+            <td class="px-4 py-2.5 text-ink">Passo</td>
+          </tr>
+          <tr class="even:bg-cream hover:bg-[#f0e8d8] transition-colors">
+            <td class="px-4 py-2.5 text-muted font-medium text-xs">Status</td>
+            <td class="px-4 py-2.5 text-ink">Mahasiswa Aktif</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- PENDIDIKAN -->
+    <section id="pendidikan" class="bg-warmwhite border border-border rounded-2xl p-8 mb-7">
+      <h2 class="font-serif text-xl font-bold text-dark mb-5 pb-3 border-b-2 border-gold flex items-center gap-2.5">
+        <span class="w-8 h-8 bg-gold rounded-lg flex items-center justify-center text-base">🎓</span>
+        Riwayat Pendidikan
+      </h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3 class="font-serif text-base font-bold text-dark">Universitas Pattimura</h3>
+          <p class="text-sm text-muted mt-0.5">Program Studi Ilmu Komputer &mdash; Ambon</p>
+          <span class="inline-block mt-1 text-xs font-semibold text-gold bg-gold/10 px-3 py-0.5 rounded-full tracking-wide">2024 – Sekarang</span>
+        </div>
+        <div class="timeline-item">
+          <h3 class="font-serif text-base font-bold text-dark">SMA Negeri 2 Ambon</h3>
+          <p class="text-sm text-muted mt-0.5">Sekolah Menengah Atas &mdash; Ambon</p>
+          <span class="inline-block mt-1 text-xs font-semibold text-gold bg-gold/10 px-3 py-0.5 rounded-full tracking-wide">2021 – 2024</span>
+        </div>
+        <div class="timeline-item">
+          <h3 class="font-serif text-base font-bold text-dark">SMP Negeri 9 Ambon</h3>
+          <p class="text-sm text-muted mt-0.5">Sekolah Menengah Pertama &mdash; Ambon</p>
+          <span class="inline-block mt-1 text-xs font-semibold text-gold bg-gold/10 px-3 py-0.5 rounded-full tracking-wide">2018 – 2021</span>
+        </div>
+        <div class="timeline-item">
+          <h3 class="font-serif text-base font-bold text-dark">SD Negeri 75 Passo</h3>
+          <p class="text-sm text-muted mt-0.5">Sekolah Dasar &mdash; Passo, Ambon</p>
+          <span class="inline-block mt-1 text-xs font-semibold text-gold bg-gold/10 px-3 py-0.5 rounded-full tracking-wide">2013 – 2019</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEAHLIAN -->
+    <section id="keahlian" class="bg-warmwhite border border-border rounded-2xl p-8 mb-7">
+      <h2 class="font-serif text-xl font-bold text-dark mb-5 pb-3 border-b-2 border-gold flex items-center gap-2.5">
+        <span class="w-8 h-8 bg-gold rounded-lg flex items-center justify-center text-base">⚡</span>
+        Keahlian &amp; Minat
+      </h2>
+
+      <p class="text-xs font-semibold text-muted uppercase tracking-widest mb-2.5">Teknologi &amp; Desain</p>
+      <div class="flex flex-wrap gap-2.5 mb-5">
+        <span class="skill-tag bg-dark text-gold-light px-4 py-1.5 rounded-full text-sm font-medium flex items-center gap-1.5 transition-transform cursor-default">💻 Python</span>
+        <span class="skill-tag bg-dark text-gold-light px-4 py-1.5 rounded-full text-sm font-medium flex items-center gap-1.5 transition-transform cursor-default">🎨 Desain Grafis</span>
+        <span class="skill-tag bg-dark text-gold-light px-4 py-1.5 rounded-full text-sm font-medium flex items-center gap-1.5 transition-transform cursor-default">📷 Fotografi</span>
+      </div>
+
+      <p class="text-xs font-semibold text-muted uppercase tracking-widest mb-2.5">Seni &amp; Budaya</p>
+      <div class="flex flex-wrap gap-2.5 mb-5">
+        <span class="skill-tag bg-forest text-green-100 px-4 py-1.5 rounded-full text-sm font-medium flex items-center gap-1.5 transition-transform cursor-default">💃 Dancer</span>
+        <span class="skill-tag bg-forest text-green-100 px-4 py-1.5 rounded-full text-sm font-medium flex items-center gap-1.5 transition-transform cursor-default">🎵 Ukulele</span>
+      </div>
+
+      <p class="text-xs font-semibold text-muted uppercase tracking-widest mb-2.5">Soft Skills</p>
+      <div class="flex flex-wrap gap-2.5">
+        <span class="skill-tag bg-accent text-orange-100 px-4 py-1.5 rounded-full text-sm font-medium flex items-center gap-1.5 transition-transform cursor-default">🤝 Kerja Tim</span>
+        <span class="skill-tag bg-accent text-orange-100 px-4 py-1.5 rounded-full text-sm font-medium flex items-center gap-1.5 transition-transform cursor-default">🗣 Komunikasi</span>
+        <span class="skill-tag bg-accent text-orange-100 px-4 py-1.5 rounded-full text-sm font-medium flex items-center gap-1.5 transition-transform cursor-default">📋 Organisasi</span>
+        <span class="skill-tag bg-accent text-orange-100 px-4 py-1.5 rounded-full text-sm font-medium flex items-center gap-1.5 transition-transform cursor-default">🧠 Berpikir Kritis</span>
+      </div>
+    </section>
+
+  </div><!-- end kolom kiri -->
+
+  <!-- ── SIDEBAR KANAN ── -->
+  <aside>
+
+    <!-- KONTAK -->
+    <section id="kontak" class="bg-warmwhite border border-border rounded-2xl p-7 mb-6">
+      <h2 class="font-serif text-xl font-bold text-dark mb-5 pb-3 border-b-2 border-gold flex items-center gap-2.5">
+        <span class="w-8 h-8 bg-gold rounded-lg flex items-center justify-center text-base">📬</span>
+        Kontak
+      </h2>
+      <ul class="list-none space-y-0">
+        <li class="py-2.5 border-b border-border flex flex-col gap-0.5">
+          <span class="text-[0.7rem] font-semibold uppercase tracking-wider text-muted">Email</span>
+          <span class="text-dark font-medium text-sm">
+            <a href="mailto:maglensya@email.com" class="text-gold hover:underline">maglensya@email.com</a>
+          </span>
+        </li>
+        <li class="py-2.5 border-b border-border flex flex-col gap-0.5">
+          <span class="text-[0.7rem] font-semibold uppercase tracking-wider text-muted">Telepon / WhatsApp</span>
+          <span class="text-dark font-medium text-sm">081247064825</span>
+        </li>
+        <li class="py-2.5 flex flex-col gap-0.5">
+          <span class="text-[0.7rem] font-semibold uppercase tracking-wider text-muted">Alamat</span>
+          <span class="text-dark font-medium text-sm leading-relaxed">Passo, Kec. Baguala<br>Kota Ambon, Maluku<br>Indonesia</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ORGANISASI -->
+    <section id="organisasi" class="bg-warmwhite border border-border rounded-2xl p-7 mb-6">
+      <h2 class="font-serif text-xl font-bold text-dark mb-5 pb-3 border-b-2 border-gold flex items-center gap-2.5">
+        <span class="w-8 h-8 bg-gold rounded-lg flex items-center justify-center text-base">🏛</span>
+        Organisasi
+      </h2>
+      <div class="bg-cream border border-border rounded-xl p-4 mb-3">
+        <h4 class="text-sm font-semibold text-dark">Himpunan Mahasiswa Ilmu Komputer</h4>
+        <p class="text-xs text-muted mt-0.5">Universitas Pattimura &mdash; Anggota Aktif</p>
+      </div>
+      <div class="bg-cream border border-border rounded-xl p-4">
+        <h4 class="text-sm font-semibold text-dark">OSIS</h4>
+        <p class="text-xs text-muted mt-0.5">SMA Negeri 2 Ambon &mdash; Anggota</p>
+      </div>
+    </section>
+
+    <!-- HOBI -->
+    <section class="bg-warmwhite border border-border rounded-2xl p-7 mb-6">
+      <h2 class="font-serif text-xl font-bold text-dark mb-5 pb-3 border-b-2 border-gold flex items-center gap-2.5">
+        <span class="w-8 h-8 bg-gold rounded-lg flex items-center justify-center text-base">🌟</span>
+        Hobi
+      </h2>
+      <ul class="list-none space-y-0">
+        <li class="py-2.5 border-b border-border flex flex-col gap-0.5">
+          <span class="text-[0.7rem] font-semibold uppercase tracking-wider text-muted">Seni Visual</span>
+          <span class="text-dark font-medium text-sm">Desain Grafis, Fotografi</span>
+        </li>
+        <li class="py-2.5 border-b border-border flex flex-col gap-0.5">
+          <span class="text-[0.7rem] font-semibold uppercase tracking-wider text-muted">Musik</span>
+          <span class="text-dark font-medium text-sm">Bermain Ukulele</span>
+        </li>
+        <li class="py-2.5 border-b border-border flex flex-col gap-0.5">
+          <span class="text-[0.7rem] font-semibold uppercase tracking-wider text-muted">Tari</span>
+          <span class="text-dark font-medium text-sm">Dancer / Koreografi</span>
+        </li>
+        <li class="py-2.5 flex flex-col gap-0.5">
+          <span class="text-[0.7rem] font-semibold uppercase tracking-wider text-muted">Teknologi</span>
+          <span class="text-dark font-medium text-sm">Pemrograman Python</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- PERNYATAAN -->
+    <section class="bg-warmwhite border border-border rounded-2xl p-7">
+      <h2 class="font-serif text-xl font-bold text-dark mb-5 pb-3 border-b-2 border-gold flex items-center gap-2.5">
+        <span class="w-8 h-8 bg-gold rounded-lg flex items-center justify-center text-base">✍️</span>
+        Pernyataan
+      </h2>
+      <p class="text-sm text-muted leading-relaxed">
+        Dengan ini saya menyatakan bahwa semua informasi yang tercantum dalam biodata ini
+        adalah <strong class="text-dark">benar dan dapat dipertanggungjawabkan.</strong>
+      </p>
+      <p class="text-xs text-muted mt-4">Ambon, 2025</p>
+      <p class="font-serif text-lg text-dark italic mt-3">Maglensya Yulya Supusepa</p>
+    </section>
+
+  </aside>
+
+</main>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="bg-dark text-cream/50 text-center py-7 px-5 text-xs mt-5">
+  &copy; 2025 &nbsp;<strong class="text-gold-light">Maglensya Yulya Supusepa</strong>&nbsp; — Mahasiswa Ilmu Komputer, Universitas Pattimura
+</footer>
+
+</body>
+</html>
